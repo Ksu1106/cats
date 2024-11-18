@@ -38,9 +38,6 @@ window.title('Cats!')
 window.geometry('800x600')
 
 
-# update_button = Button(text='Обновить картинку', command=set_image)
-# update_button.pack(anchor="s", padx=10, pady=10)
-
 menu_bar = Menu(window)
 window.config(menu = menu_bar)
 
@@ -53,12 +50,6 @@ file_menu.add_command(label='Выход', command = exit)
 
 url = 'https://cataas.com/cat'
 
-img = load_image(url)
-
-if img:
-    label.config(image=img)
-    label.image = img
-
-set_image()
+open_new_window()
 
 window.mainloop()
